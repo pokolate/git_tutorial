@@ -1,0 +1,40 @@
+@mixin font-family($type, $important: false) {
+	@if $important == 'important' or $important == true {
+		$important: ' !important';
+	} @else {
+		$important: '';
+	}
+	@if $type == sans-serif {
+		font-family: sans-serif#{$important};
+	} @else if $type == serif {
+		font-family: serif#{$important};
+	} @else if $type == meiryo {
+		font-family: Meiryo, 'MS PGothic', sans-serif#{$important};
+	} @else if $type == monospace {
+		font-family: monospace#{$important};
+	} @else if $type == jp {
+		font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif#{$important};
+		}
+	}
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+// ex:@include vendor-prefix(display,flex);
+
+@mixin LinkColor($color) {
+  color: $color;
+  text-decoration: none;
+	font-weight: bold;
+  &:hover, &:active, &:focus {
+    color: adjust-hue($color, 150deg);
+  }
+  &:visited {
+    color: adjust-hue($color, 30deg);
+    text-decoration: underline;
+  }
+}

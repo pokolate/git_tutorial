@@ -1,0 +1,48 @@
+@import "./mixin.scss";
+@import "./flexbox.scss";
+
+.form-block,.form-block__ft{
+  &__inner{
+    .mail{
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 40px;
+      position: relative;
+      input.email{
+        border: solid 1px #d4d4d4;
+        padding: 14px;
+        width: 60%;
+        font-size: 1.2rem;
+        @include vendor-prefix(border-radius,4px);
+        margin-right: 10px;
+      }
+      input.email:focus{
+        outline:solid 1px #9c9c9c;
+      }
+      input.error{
+        border: solid 1px red;
+      }
+      input.submit{
+        width: 30%;
+        background-color: #000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        @include vendor-prefix(border-radius,4px);
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      input.submit:hover {
+        background-color: #276EF1;
+      }
+      .error-txt{
+        position: absolute;
+        text-align: left;
+        font-size: 12px;
+        color: #ff6787;
+        bottom: -20px;
+        left: 30px;
+      }
+    }
+  }
+}

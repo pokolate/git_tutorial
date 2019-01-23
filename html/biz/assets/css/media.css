@@ -1,0 +1,358 @@
+@charset "UTF-8";
+.site-header {
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  border-bottom: solid 1px #F2F2F2;
+  position: relative;
+  z-index: 999; }
+.site-header__inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 22px 20px; }
+.site-header__inner__logo {
+      background-image: url(../images/logo_mark+txt.svg);
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+      height: 32px;
+      width: 162px;
+      display: block;
+      margin-left: 10px; }
+.site-header__inner__title {
+      font-size: 0.7rem;
+      margin-left: 20px; }
+.site-header__link {
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    font-size: 1rem;
+    color: #232323;
+    text-decoration: none;
+    font-weight: bold; }
+.site-header__link:hover, .site-header__link:active, .site-header__link:focus {
+      color: #232323; }
+.site-header__link:visited {
+      color: #232323;
+      text-decoration: underline; }
+.site-header__link:hover {
+      color: #276ef1; }
+@media screen and (max-width: 894px) {
+  .site-header {
+    height: 60px; }
+    .site-header__inner {
+      padding: 15px 20px; }
+      .site-header__inner__logo {
+        margin-left: 0px; }
+      .site-header__inner__title {
+        display: none; }
+    .site-header__link {
+      font-size: 0.8rem;
+      top: 25px;
+      right: 20px; } }
+footer {
+  width: 100%;
+  background: #000;
+  padding: 80px 0; }
+footer .footer-inner {
+    width: 90%;
+    margin: 0 auto; }
+footer .footer-inner__social {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto 20px auto; }
+footer .footer-inner__social li {
+        display: inline-block;
+        margin: 0 10px; }
+footer .footer-inner__social li a {
+          display: block;
+          text-indent: -9999px; }
+footer .footer-inner__social li .tw {
+          background: url(../images/social/ic_tw.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 20px;
+          height: 20px; }
+footer .footer-inner__social li .insta {
+          background: url(../images/social/ic_insta.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 20px;
+          height: 20px; }
+footer .footer-inner__social li .fb {
+          background: url(../images/social/ic_fb.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 20px;
+          height: 20px; }
+footer .footer-inner__menu {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 20px; }
+footer .footer-inner__menu li {
+        display: inline;
+        margin: 0 10px; }
+footer .footer-inner__menu li a {
+          color: #828282;
+          font-size: 0.8rem;
+          text-decoration: none; }
+footer .footer-inner--copy {
+      color: #fff;
+      font-size: 0.8rem;
+      text-align: center; }
+@media screen and (max-width: 1120px) {
+  main .hero-block__left--title {
+    width: 75%; }
+    main .hero-block__left--title h1 {
+      font-size: 3rem;
+      line-height: 3.5rem; }
+    main .hero-block__left--title p {
+      font-size: 0.8rem; }
+  main .form-block__inner--title {
+    font-size: 1.3rem; }
+  main .title-block__left h2 {
+    font-size: 2.5rem; }
+  main .content-block__inner {
+    width: 85%; }
+  main .form-block__ft__inner--title {
+    font-size: 1.5rem; } }
+@media screen and (max-width: 894px) {
+  body {
+    font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden; }
+  main .hero-block {
+    display: block;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    height: 600px; }
+    main .hero-block__left {
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      z-index: 99;
+      bottom: 30px; }
+      main .hero-block__left--title {
+        width: 90%;
+        position: relative;
+        height: 220px;
+        padding-top: 30px;
+        background-color: #fff; }
+        main .hero-block__left--title h1 {
+          font-size: 2rem;
+          line-height: 3rem;
+          text-align: center; }
+          main .hero-block__left--title h1 span.blue {
+            color: #295F95; }
+          main .hero-block__left--title h1 span.small {
+            font-size: 1.5rem; }
+        main .hero-block__left--title p {
+          font-size: 0.8rem;
+          line-height: 1.6em;
+          margin-top: 20px;
+          padding: 0 80px; }
+    main .hero-block__right {
+      width: 100%;
+      height: 60vh;
+      margin-right: -1px;
+      position: absolute; }
+      main .hero-block__right .slides {
+        height: 55vh; }
+  main .form-block {
+    top: 0px; }
+    main .form-block__inner {
+      width: 85%;
+      height: auto;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: -20px;
+      padding: 40px 0 50px 0; }
+      main .form-block__inner--title {
+        padding: 0 20px 20px 20px;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-align: left; }
+        main .form-block__inner--title span.small {
+          font-size: 1.2rem; }
+      main .form-block__inner .mail {
+        width: 80%;
+        margin-top: 10px; }
+        main .form-block__inner .mail input.email {
+          width: 89%;
+          font-size: 1rem;
+          margin-right: 0px; }
+        main .form-block__inner .mail input.error {
+          border: solid 1px red; }
+        main .form-block__inner .mail input.submit {
+          width: 100%;
+          padding: 12px 5%;
+          border-radius: 2px;
+          font-size: 1rem;
+          cursor: pointer;
+          margin-top: 10px; }
+        main .form-block__inner .mail input.submit:hover {
+          background-color: #276EF1; }
+        main .form-block__inner .mail .error-txt {
+          position: absolute;
+          text-align: left;
+          font-size: 12px;
+          color: #ff6787;
+          left: 0px;
+          height: 10px;
+          bottom: -20px; }
+  main .title-block {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin-top: 150px;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between; }
+    main .title-block__left {
+      position: relative;
+      width: 100%;
+      left: 0px; }
+      main .title-block__left--title {
+        width: 80%;
+        position: absolute;
+        margin: auto;
+        height: 180px; }
+      main .title-block__left h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        text-align: center; }
+        main .title-block__left h2 span.blue {
+          color: #295F95; }
+        main .title-block__left h2 span.small {
+          font-size: 1.5rem; }
+    main .title-block__right {
+      width: 100%;
+      height: 40vh;
+      margin-right: -1px;
+      padding-top: 90px; }
+      main .title-block__right__image {
+        background-size: 110%;
+        width: 100%;
+        height: 110%; }
+  main .content-block {
+    width: 100%;
+    margin: 40px 0; }
+    main .content-block__inner {
+      width: 80%;
+      margin: 100px auto 0px auto;
+      position: relative;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: space-between; }
+      main .content-block__inner--box {
+        width: 40%;
+        text-align: center;
+        margin: 0 auto 80px auto; }
+        main .content-block__inner--box img {
+          margin: 0 0 0 0; }
+        main .content-block__inner--box h3 {
+          font-size: 1rem;
+          margin: 20px 0;
+          line-height: 1.5rem; }
+        main .content-block__inner--box p {
+          font-size: 1rem;
+          line-height: 1.2rem; }
+  main .form-block__ft__inner--title {
+    padding: 25px 0 0 0;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    text-align: left; }
+    main .form-block__ft__inner--title span.small {
+      font-size: 1.2rem; }
+  main .form-block__ft__inner .mail {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative; }
+    main .form-block__ft__inner .mail input.email {
+      padding: 5%;
+      width: 89%;
+      font-size: 1rem;
+      border-radius: 2px;
+      margin-right: 0px; }
+    main .form-block__ft__inner .mail input.error {
+      border: solid 1px red; }
+    main .form-block__ft__inner .mail input.submit {
+      width: 100%;
+      padding: 12px 20px;
+      cursor: pointer;
+      margin-top: 10px; }
+    main .form-block__ft__inner .mail input.submit:hover {
+      background-color: #276EF1; }
+    main .form-block__ft__inner .mail .error-txt {
+      position: absolute;
+      text-align: left;
+      font-size: 12px;
+      color: #ff6787;
+      bottom: -30px;
+      left: 0px;
+      height: 20px; }
+  main .thanks-block {
+    height: auto;
+    padding-bottom: 100px; }
+    main .thanks-block__inner {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      height: auto; }
+      main .thanks-block__inner h1 {
+        font-size: 2rem; }
+      main .thanks-block__inner p {
+        font-size: 1rem;
+        line-height: 1.5rem; }
+  main .bg_left {
+    position: absolute;
+    top: 20%;
+    left: -5%;
+    width: 100px;
+    height: 300px; }
+  main .bg_right {
+    position: absolute;
+    top: 20%;
+    right: -5%;
+    width: 100px;
+    height: 300px; } }
+@media screen and (max-width: 640px) {
+  main .hero-block__left--title p {
+    padding: 0 40px; }
+  main .content-block__inner {
+    width: 80%;
+    margin: 0px auto 0px auto;
+    position: relative;
+    display: block; }
+    main .content-block__inner--box {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto 80px auto; } }
+@media screen and (max-width: 640px) {
+  footer, footer.thanks {
+    position: relative; }
+    footer .footer-inner__list li a, footer.thanks .footer-inner__list li a {
+      font-size: 0.6rem; } }

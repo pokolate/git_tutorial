@@ -1,0 +1,58 @@
+@import "./mixin.scss";
+@import "./flexbox.scss";
+
+.site-header{
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  border-bottom: solid 1px #F2F2F2;
+  position: relative;
+  z-index: 999;
+  &__inner{
+    @include flexbox();
+    @include align-items(center);
+    padding: 22px 20px;
+    &__logo{
+      background-image: url(../images/logo_mark+txt.svg);
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+      height: 32px;
+      width: 162px;
+      display: block;
+      margin-left: 10px;
+    }
+    &__title{
+      font-size: 0.7rem;
+      margin-left: 20px;
+    }
+  }
+  &__link{
+    position: absolute;
+    right: 30px;
+    top:32px;
+    font-size: 1rem;
+    @include LinkColor(#232323);
+    &:hover{
+      color: adjust-hue(#276EF1, 0deg);
+    }
+  }
+}
+@media screen and (max-width: 894px) {
+  .site-header{
+    height: 60px;
+    &__inner{
+      padding: 15px 20px;
+      &__logo{
+        margin-left: 0px;
+      }
+      &__title{
+      display: none;
+      }
+    }
+    &__link{
+      font-size: 0.8rem;
+      top:25px;
+      right: 20px;
+    }
+  }
+}
